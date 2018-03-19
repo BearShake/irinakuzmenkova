@@ -45,16 +45,18 @@
             <div class="row">
                 <div class="col-sm-12 col-md-8"><h1>Irina Kuzmenkova</h1></div>
             </div>
-            <p>Kad zūd motivācija turpināt cīnīties un pārņem dzīves apnikums,
-                ir svarīgi atcerēties šīs patiesības, kas ļaus tev paraudzīties uz visu no svaigas perspektīvas!</p>
+            <p><b><i>"Kad zūd motivācija turpināt cīnīties un pārņem dzīves apnikums,
+                ir svarīgi atcerēties šīs patiesības, kas ļaus tev paraudzīties uz visu no svaigas perspektīvas!"</i></b></p>
         </div>
 
         <div class="container-fluid about contact-info" id="about">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="box">
+                    <div class="box g">
+                        <img src="img/bookkeeping-calculator-bw.jpg" alt="calculator" id="calc" class="img-thumbnail">
                         <h2>Kāpēc es ?</h2>
                         <h5>Peredze finanšu sferē ......., ka arī.Augstakas....... un ....... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus libero maxime nesciunt provident unde vel. Accusantium alias aut dicta dolores facere, hic mollitia natus quaerat quibusdam, quisquam tenetur vitae.</h5>
+
                     </div>
                 </div>
                 <div class="col-sm-6 side-log">
@@ -90,7 +92,7 @@
                     <p>Sertificeto palidzību</p>
                 </div>
                 <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <span class="glyphicon glyphicon-certificate logo-small yellow"></span>
                     <h4>Sertificets specialists</h4>
                     <p>Sertificeto palidzību</p>
                 </div>
@@ -202,5 +204,30 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            }))}
+        </script>
     </body>
 </html>

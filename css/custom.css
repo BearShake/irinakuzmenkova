@@ -34,6 +34,7 @@ h1{
     padding: 2%;
     background-color: #3c3c3c;
     color: #cccccc;
+    box-shadow: 0 0 5px #3c3c3c;
 }
 
 .contact-info{
@@ -44,6 +45,17 @@ h1{
     background-size: cover;
 }
 
+#calc{
+    margin: 5%;
+    width: 40%;
+    height: auto;
+    float: right;
+}
+
+.box.g h5{
+    width: 80%;
+}
+
 .hs{
     border-bottom: 2px solid maroon;
     font-weight: normal;
@@ -52,7 +64,7 @@ h1{
 
 .contact{
     background-color: #cccccc;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 .navbar {
@@ -70,12 +82,20 @@ h1{
 .logo-small{
     font-size: 80px !important;
 }
+.g{
+
+}
 
 .box{
     background-color: rgba(35, 35, 36, 0.65);
     box-shadow: 0 0 10px #3c3c3c;
     border-radius: 20px;
     padding: 2%;
+}
+
+.box.g {
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .large-box{
@@ -131,7 +151,7 @@ h5 {
 .col-sm-5 .img-rounded{
     margin-left: 15%;
     width: 50%;
-    height: 40%;
+    height: 410px;
 }
 
 .middle-glyph{
@@ -145,3 +165,9 @@ h5 {
     margin-right: 5%;
 }
 
+@media screen and (max-width: 768px){
+    .img-rounded{
+        display: none;
+    }
+
+}
