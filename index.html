@@ -13,19 +13,190 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
     </head>
     <body>
-        
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+            <div class="row">
+                <div class="col-sm-12 col-md-8"><h1>Irina Kuzmenkova</h1></div>
+            </div>
+            <p>Kad zūd motivācija turpināt cīnīties un pārņem dzīves apnikums,
+                ir svarīgi atcerēties šīs patiesības, kas ļaus tev paraudzīties uz visu no svaigas perspektīvas!</p>
+        </div>
+
+        <div class="container-fluid about contact-info" id="about">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="box">
+                        <h2>Kāpēc es ?</h2>
+                        <h5>Peredze finanšu sferē ......., ka arī.Augstakas....... un ....... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus libero maxime nesciunt provident unde vel. Accusantium alias aut dicta dolores facere, hic mollitia natus quaerat quibusdam, quisquam tenetur vitae.</h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 side-log">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                </div>
+            </div>
+            <div class="box large-box">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="glyphicon glyphicon-ok-sign middle-glyph"></div>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ipsum voluptates? Ad atque distinctio eaque et nihil praesentium voluptatum. Aspernatur.</h5>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="glyphicon glyphicon-ok-sign middle-glyph"></div>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur doloribus ducimus error ex fugiat ipsum iure obcaecati quis repudiandae? Corporis cumque debitis eaque, itaque mollitia quod rem voluptatem voluptates!</h5>
+                    </div>
+            </div>
+        </div>
+        </div>
+        <!-- Services -->
+
+        <div class="container-fluid text-center contact" id="services">
+            <h2>No manas pūses</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <h4>Sertificets specialists</h4>
+                    <p>Sertificeto palidzību</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <h4>Sertificets specialists</h4>
+                    <p>Sertificeto palidzību</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <h4>Sertificets specialists</h4>
+                    <p>Sertificeto palidzību</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <h4>Sertificets specialists</h4>
+                    <p>Sertificeto palidzību</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <h4>Sertificets specialists</h4>
+                    <p>Sertificeto palidzību</p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <h4>Sertificets specialists</h4>
+                    <p>Sertificeto palidzību</p>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery/Gallery -->
+        <div class="container-fluid text-center bg-grey" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="carousel slide text-center" id="atsauksmes" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#atsauksme" data-slide-to="0" class="active"></li>
+                    <li data-target="#atsauksme" data-slide-to="1"></li>
+                    <li data-target="#atsauksme" data-slide-to="2"></li>
+                </ol>
+            </div>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#atsauksmes" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#atsauksmes" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        </div>
+
+
+
+        <!-- Contact -->
+        <div class="container-fluid contact" id="contact">
+            <h3 class="text-center">Kā sazināties ar mani?</h3>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p class="hs">Jūsu e-pasts</p>
+                    <p class="hs">Vārds</p>
+                    <p class="hs">Uzvārds</p>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-5 forms">
+                            <input type="email" class="form-control" id="email" name="mail" placeholder="e-mail">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="vārds">
+                            <input type="text" class="form-control" id="surname" name="surname" placeholder="uzvārds">
+                            <button class="btn btn-default pull-right" type="submit">Atsutīt</button>
+                        </div>
+                        <div class="col-sm-5">
+                            <img src="img/profile.jpg" class="img-rounded" alt="Irina-profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut officiis provident.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')

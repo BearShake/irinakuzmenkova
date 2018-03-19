@@ -1,0 +1,147 @@
+body {
+    font: 400 15px Lato, sans-serif !important;
+    line-height: 1.8;
+    color: #818181;
+}
+
+h1{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+    background-color: rgba(66, 66, 65, 0.53) !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #696b62 !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.container-fluid.about .row{
+    padding: 4%;
+}
+
+.contaier-fluid.bg-grey{
+    padding-bottom: 5%;
+}
+
+.footer{
+    height: 5%;
+    padding: 2%;
+    background-color: #3c3c3c;
+    color: #cccccc;
+}
+
+.contact-info{
+    background-image: url("../img/buhg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hs{
+    border-bottom: 2px solid maroon;
+    font-weight: normal;
+    padding-bottom: 14px
+}
+
+.contact{
+    background-color: #cccccc;
+    padding-bottom: 5%;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: rgba(66, 66, 65, 0.53);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.logo-small{
+    font-size: 80px !important;
+}
+
+.box{
+    background-color: rgba(35, 35, 36, 0.65);
+    box-shadow: 0 0 10px #3c3c3c;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.large-box{
+    margin-bottom: 5%;
+}
+
+.glyphicon{
+    font-size:  180px;
+    color: #f8fff6 !important;
+
+}
+.about{
+    background-color: #e7e7e7;
+}
+
+.side-log{
+    padding-left: 20%;
+}
+
+.jumbotron {
+    background-color: #404041;
+    color: #fff;
+    padding: 65px 25px;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0px;
+}
+
+.container-fluid.contact p{
+    margin-left: 12%;
+    color: #0f0f0f;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h5 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #e7e7e7;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.form-control{
+    margin: 9px;
+}
+
+.col-sm-5 .img-rounded{
+    margin-left: 15%;
+    width: 50%;
+    height: 40%;
+}
+
+.middle-glyph{
+    float: right;
+    margin-right: 15%;
+    font-size: 80px;
+}
+
+.forms{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
