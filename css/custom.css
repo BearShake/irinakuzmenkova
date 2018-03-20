@@ -25,8 +25,31 @@ h1{
     padding: 4%;
 }
 
+.bg-grey{
+    margin: 5% 0 5% 0;
+}
+
 .contaier-fluid.bg-grey{
     padding-bottom: 5%;
+}
+.glyphicon-chevron-right, .glyphicon-chevron-left{
+    color: #2b669a!important;
+    font-size: 60px!important;
+}
+.carousel-indicators{
+    background-color: #3c3c3c;
+}
+.portf{
+    color: #3c1416!important;
+}
+
+.carousel-control-prev{
+    background-color: rgba(133, 59, 54, 0) !important;
+
+}
+
+.left{
+    background-color: rgba(133, 59, 54, 0) !important;
 }
 
 .footer{
@@ -35,6 +58,10 @@ h1{
     background-color: #3c3c3c;
     color: #cccccc;
     box-shadow: 0 0 5px #3c3c3c;
+}
+
+.carousel-inner{
+    padding-bottom: 5%;
 }
 
 .contact-info{
