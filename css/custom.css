@@ -84,7 +84,7 @@ h1{
 }
 
 .hs{
-    border-bottom: 2px solid maroon;
+    border-bottom: 2px solid #8a8a89;
     font-weight: normal;
     padding-bottom: 14px
 }
@@ -130,8 +130,19 @@ h1{
     padding-right: 4%;
 }
 
+.main-info{
+    margin-bottom: 0%;
+}
+
 .right-spaced{
-    margin-right: 2%;
+    color: #010102;
+}
+
+.right-spaced p{
+    margin: 4%;
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: 2px;
 }
 
 .large-box{
@@ -196,7 +207,7 @@ h4{
 h5 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #e7e7e7;
+    color: #424241;
     font-weight: 400;
     margin-bottom: 30px;
 }
