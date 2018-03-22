@@ -3,7 +3,7 @@ body {
     line-height: 1.8;
     color: #818181;
 
-    background-color: #c0c0c0;
+    background-color: #d9d9d9;
 }
 
 h1{
@@ -21,6 +21,7 @@ h1{
     background-color: #fff !important;
 }
 .navbar-default .navbar-toggle {
+    border-bottom: solid;
     border-color: transparent;
     color: #fff !important;
 }
@@ -47,11 +48,15 @@ h1{
     color: #3c1416!important;
 }
 
+.fill-anim{
+
+}
+
 .footer{
     height: 5%;
     padding: 2%;
     background-color: #3c3c3c;
-    color: #cccccc;
+    color: #c5c5c5;
     box-shadow: 0 0 5px #3c3c3c;
 }
 
@@ -60,16 +65,15 @@ h1{
     margin-bottom: 3%;
 }
 
-.carousel-inner{
-    padding-bottom: 5%;
-}
-
 .contact-info{
     background-image: url("../img/buhg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-top-style: solid;
+    border-color: #cccccc;
+    border-width: 2px;
 }
 
 #calc{
@@ -130,12 +134,19 @@ h1{
     padding-right: 4%;
 }
 
+.min-row{
+    padding-bottom: 0%!important;
+}
+
 .main-info{
     margin-bottom: 0%;
 }
 
 .right-spaced{
     color: #010102;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 5px;
 }
 
 .right-spaced p{
