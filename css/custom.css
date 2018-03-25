@@ -16,12 +16,8 @@ h1{
 
 }
 
-.parallax{
-
-}
-
 .right-col{
-    background-color: rgba(67, 98, 238, 0.8);
+    background-color: rgba(33, 96, 163, 0.13);
     padding-top: 8%;
     padding-bottom: 8%;
 }
@@ -70,13 +66,7 @@ h1{
     background-color: rgba(60, 60, 60, 0.39);
     border-radius: 5px;
 }
-.portf{
-    color: #3c1416!important;
-}
 
-.fill-anim{
-
-}
 
 .footer{
     height: 5%;
@@ -229,7 +219,7 @@ h1{
 
 .aac{
     height: 100%;
-    background-color: rgba(0, 32, 127, 0.69);
+    background-color: rgba(26, 86, 139, 0.69);
     padding-top: 5%;
 }
 
