@@ -1,0 +1,156 @@
+$bgcolorRed : #9f2720;
+$bgcolorGrey : #323232;
+$colorWhite : white;
+$spacing: 7px;
+
+@import
+url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
+
+@mixin col-options($px){
+  padding-top: $px;
+  padding-bottom: $px;
+}
+
+.msg-title-header, .title, .description, .resultTitle, .result, .code {
+  .btn {
+    @include col-options($spacing);
+    font-family: "Barlow Condensed", sans-serif;
+  }
+}
+
+
+.msg-title-header, .title, .description, .resultTitle, .result, .code {
+  .btn {
+    @extend .msg-title-header, .title, .description, .resultTitle, .result, .code;
+
+  }
+}
+
+@mixin redWhite{
+  background-color: $bgcolorRed;
+  color: $colorWhite;
+}
+
+@mixin redRed{
+  background-color: $bgcolorRed;
+  border-color: $bgcolorRed;
+}
+
+.navbar-inverse {
+  background-color: $bgcolorGrey;
+  border-style: none;
+  border-radius: 0;
+
+
+
+  .navbar-nav {
+    /* default text color */
+    /* text color and active element background color */
+    li > a {
+      color: $colorWhite;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+    li > a:hover {
+      @include redWhite;
+    }
+    li > a:focus {
+      @extend a:hover;
+    }
+    .active > a {
+      @extend a:hover;
+    }
+    .active > a:hover {
+      @extend a:hover;
+    }
+    .active > a:focus {
+      @extend a:hover;
+    }
+  }
+  .navbar-toggle {
+    @include redRed;
+
+    .icon-bar {
+      background-color: $colorWhite;
+    }
+  }
+  .navbar-toggle:hover {
+    @include redRed;
+  }
+  .navbar-toggle:focus {
+    @include redRed;
+  }
+}
+
+.navbar-brand {
+  padding: 10px;
+
+  img {
+    max-width: 100px;
+  }
+}
+
+.title {
+  font-size: 14px;
+  letter-spacing: 12px;
+  text-align: center;
+  background-color: $bgcolorGrey;
+  color: $colorWhite;
+}
+.description {
+  @include redWhite;
+}
+.resultTitle {
+  background-color: $bgcolorGrey;
+  color: $colorWhite;
+}
+.result {
+  background-color: $colorWhite;
+  color: #000000;
+}
+.code .btn {
+  background-color: $bgcolorGrey;
+}
+
+
+
+.btn-warning {
+  background-color: $bgcolorGrey;
+  border: 0;
+  border-radius: 0;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+@mixin btn{
+  color: $colorWhite;
+  background-color: $bgcolorGrey;
+  border: 0;
+}
+
+.btn-warning:hover {
+  @include btn;
+}
+.btn-warning:focus {
+  @extend .btn-warning:hover;
+}
+.btn-warning:focus:active {
+  @extend .btn-warning:hover;
+}
+body {
+  margin-top: 80px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+p {
+  margin: 0 0 0;
+}
+.code {
+  background-color: $bgcolorRed;
+}
+.hideCode {
+  display: none;
+}
+.showCode {
+  display: block;
+}

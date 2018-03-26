@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
+.msg-title-header .btn, .title .btn .btn, .description .btn .btn, .resultTitle .btn .btn, .result .btn .btn, .code .btn .btn, .title .btn, .msg-title-header .btn .btn, .description .btn .btn, .resultTitle .btn .btn, .result .btn .btn, .code .btn .btn, .description .btn, .msg-title-header .btn .btn, .title .btn .btn, .resultTitle .btn .btn, .result .btn .btn, .code .btn .btn, .resultTitle .btn, .msg-title-header .btn .btn, .title .btn .btn, .description .btn .btn, .result .btn .btn, .code .btn .btn, .result .btn, .msg-title-header .btn .btn, .title .btn .btn, .description .btn .btn, .resultTitle .btn .btn, .code .btn .btn, .code .btn, .msg-title-header .btn .btn, .title .btn .btn, .description .btn .btn, .resultTitle .btn .btn, .result .btn .btn {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Barlow Condensed", sans-serif; }
+
+.navbar-inverse {
+  background-color: #323232;
+  border-style: none;
+  border-radius: 0; }
+  .navbar-inverse .navbar-nav {
+    /* default text color */
+    /* text color and active element background color */ }
+    .navbar-inverse .navbar-nav li > a {
+      color: white;
+      font-family: "Barlow Condensed", sans-serif; }
+    .navbar-inverse .navbar-nav li > a:hover, .navbar-inverse .navbar-nav li > a:focus, .navbar-inverse .navbar-nav li.active > a, .navbar-inverse .navbar-nav li.active > a:hover, .navbar-inverse .navbar-nav li.active > a:focus {
+      background-color: #9f2720;
+      color: white; }
+  .navbar-inverse .navbar-toggle {
+    background-color: #9f2720;
+    border-color: #9f2720; }
+    .navbar-inverse .navbar-toggle .icon-bar {
+      background-color: white; }
+  .navbar-inverse .navbar-toggle:hover {
+    background-color: #9f2720;
+    border-color: #9f2720; }
+  .navbar-inverse .navbar-toggle:focus {
+    background-color: #9f2720;
+    border-color: #9f2720; }
+
+.navbar-brand {
+  padding: 10px; }
+  .navbar-brand img {
+    max-width: 100px; }
+
+.title, .msg-title-header .btn, .title .btn, .description .btn, .resultTitle .btn, .result .btn, .code .btn {
+  font-size: 14px;
+  letter-spacing: 12px;
+  text-align: center;
+  background-color: #323232;
+  color: white; }
+
+.description, .msg-title-header .btn, .title .btn, .description .btn, .resultTitle .btn, .result .btn, .code .btn {
+  background-color: #9f2720;
+  color: white; }
+
+.resultTitle, .msg-title-header .btn, .title .btn, .description .btn, .resultTitle .btn, .result .btn, .code .btn {
+  background-color: #323232;
+  color: white; }
+
+.result, .msg-title-header .btn, .title .btn, .description .btn, .resultTitle .btn, .result .btn, .code .btn {
+  background-color: white;
+  color: #000000; }
+
+.code .btn, .msg-title-header .btn .btn, .title .btn .btn, .description .btn .btn, .resultTitle .btn .btn, .result .btn .btn {
+  background-color: #323232; }
+
+.btn-warning {
+  background-color: #323232;
+  border: 0;
+  border-radius: 0;
+  font-family: "Barlow Condensed", sans-serif; }
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:focus:active {
+  color: white;
+  background-color: #323232;
+  border: 0; }
+
+body {
+  margin-top: 80px; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+p {
+  margin: 0 0 0; }
+
+.code, .msg-title-header .btn, .title .btn, .description .btn, .resultTitle .btn, .result .btn, .code .btn {
+  background-color: #9f2720; }
+
+.hideCode {
+  display: none; }
+
+.showCode {
+  display: block; }
+
+/*# sourceMappingURL=mymain.css.map */

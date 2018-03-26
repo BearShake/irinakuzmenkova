@@ -11,19 +11,27 @@ h1{
 }
 
 .c-info{
-    background-color: rgba(26, 86, 139, 0.9);
+
     height: 100%;
 
 }
 
 .right-col{
-    background-color: rgba(33, 96, 163, 0.13);
-    padding-top: 8%;
+    background-color: rgba(24, 97, 139, 0.46);
+    padding-top: 5%;
     padding-bottom: 8%;
+    padding-left: 2%;
+    border-radius: 12px;
 }
 .c-info h1{
     font-family: Lato, sans-serif;
-    font-size: 48px;
+    font-size: 38px;
+    color: white;
+
+}
+
+.controlled{
+    margin-left: 5%;
 }
 
 .info h1{
@@ -121,10 +129,14 @@ h1{
 
 }
 
+.cnt{
+    margin-top: 15%;
+}
+
 .contact{
     margin-top: -2%;
     padding-top: 5%;
-    background-color: #b5bec3;
+    background-color: white;
     padding-bottom: 2%;
 }
 
@@ -133,8 +145,9 @@ h1{
 }
 
 .contact2{
+
     margin-top: -2%;
-    background-image: url("../img/main-info.jpg");
+    background-image: url("../img/pejz.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -221,6 +234,7 @@ h1{
     height: 100%;
     background-color: rgba(26, 86, 139, 0.69);
     padding-top: 5%;
+    padding-bottom: 20%;
 }
 
 .right-spaced{
@@ -271,7 +285,7 @@ h1{
 
 
 .blue{
-    background-color: #283870;
+    background-color: rgb(26, 86, 139);
 }
 
 .container.contact{
@@ -298,6 +312,48 @@ p{
 .container-fluid{
     padding: 0%!important;
 
+}
+
+.glyphicon.glyphicon-tag{
+    font-size: 18px;
+}
+
+.centered .row{
+    margin-top: 30%;
+    margin-left: 12%;
+}
+
+.centered h2, .centered p{
+    font-size: 38px;
+    color: #0d528b;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.aac h2{
+    color: white;
+    text-shadow: #1a568b;
+    font-size: 41px;
+    margin-bottom: 5%;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.aac h4{
+    text-align: left;
+    font-size: 18px;
+}
+
+.aac .row{
+    margin-top: 10%;
+    margin-right: 0%;
+}
+
+.aac p{
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 21px;
 }
 
 h2 {
@@ -383,6 +439,37 @@ h5 {
     color: #ffcc5e;
 }
 
+.slideanim {visibility:hidden;}
+.handled{visibility: hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
 @media screen and (max-width: 768px){
     .img-rounded{
         display: none;
@@ -400,3 +487,4 @@ h5 {
     }
 
 }
+

@@ -46,12 +46,16 @@
 
 
         <div class="container-fluid main-info">
-                <div class="col-sm-4 aac">
-                    <div class="col-sm-4">
+                <div class="col-sm-6 aac">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="handled"><strong>Irina</strong> Kuzmenkova</h2>
+                            <p>Ведение уголовных дел (защита на стадии дознания, следствия, судебная защита)</p>
+                        </div>
                     </div>
-                    <div class="col-sm-8">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                    </div>
+
                 </div>
         </div>
 
@@ -62,16 +66,32 @@
                         <div class="row centered">
                             <div class="col-sm-6"></div>
                             <div class="col-sm-6">
-                                <h3>SFERAS</h3>
-                                <h2>DARBA</h2>
+                                <div class="row">
+                                    <div class="col-sm6"></div>
+                                    <div class="col-sm6">
+                                        <h2>Darba</h2>
+                                        <p>Sfēras</p>
+                                    </div>
+
+                                </div>
+
                             </div>
-
                         </div>
-
                     </div>
 
                     <div class="col-sm-8 bg_yel">
-                        <div class="row">
+                        <div class="row slideanim">
+                            <div class="col-sm-6">
+                                <div class="glyphicon glyphicon-tag"></div>
+                                <h5>Hello</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Hello</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row slideanim">
                             <div class="col-sm-6">
                                 <h5>Hello</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -81,17 +101,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h5>Hello</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <h5>Hello</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <div class="row">
+                        <div class="row slideanim">
                             <div class="col-sm-6">
                                 <h5>Hello</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -202,25 +212,38 @@
 
         </div>
 
-
         <!-- Contact -->
         <div class="container-fluid contact2" id="contact">
             <div class="row c-info">
                 <div class="col-sm-5">
                     <div class="row">
-                        <div class="col-sm-6"></div>
-                        <div class="col-sm-6">
-                            <h1><strong>СВЯЖИТЕСЬ</strong> С НАМИ</h1>
+                        <div class="col-sm-12">
+                            <div class="row cnt">
+                                <div class="col-sm-12">
+                                    <h1><strong>СВЯЖИТЕСЬ</strong> С НАМИ</h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-7 right-col">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <h3>НАШ АДРЕС</h3>
-                            <h5>ул. Арбат, 1а, Москва, 119019, Россия</h5>
-                            <h5>Email: info@mysite.ru</h5>
-                            <h5>Телефон:  +7 (495) 000-00-00</h5>
+                        <div class="col-sm-6">
+                            <div class="row controlled">
+                                <h3>Mūsu adrese</h3>
+                                <h5>ул. Арбат, 1а, Москва, 119019, Россия</h5>
+                                <h5>Email: info@mysite.ru</h5>
+                                <h5>Телефон:  +7 (495) 000-00-00</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <textarea class="form-control" name="comment" id="comment" cols="30" rows="10" placeholder="Teksts"></textarea>
                         </div>
                     </div>
                 </div>
@@ -259,22 +282,43 @@
         <script>
 
             $(document).ready(function(){
+                $(".handled").each(function () {
+                    $(this).addClass("slide");
+                });
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
-            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                        // Store hash
+                        var hash = this.hash;
 
-                if (this.hash !== "") {
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function(){
 
-                    event.preventDefault();
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
 
-                    // Store hash
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function(){
-                        window.location.hash = hash;
+                $(window).scroll(function() {
+                    $('.slideanim, .handled').each(function(){
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
                     });
-                } // End if
-            })})
+                });
+            })
+
 
         </script>
     </body>
