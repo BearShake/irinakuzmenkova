@@ -6,8 +6,9 @@ body {
 }
 
 h1{
-    margin-left: 10%;
+    margin-left: 20%;
     margin-bottom: 5%;
+    border-bottom: blue;
 }
 
 .c-info{
@@ -27,6 +28,8 @@ h1{
     font-family: Lato, sans-serif;
     font-size: 38px;
     color: white;
+    margin-bottom: 3%;
+    padding-right: 3%;
 
 }
 
@@ -85,8 +88,12 @@ h1{
 }
 
 .adv-row{
-    margin-top: 3%;
+    margin-top: 8%;
     margin-bottom: 3%;
+}
+
+.selectpicker{
+    float: right;
 }
 
 .contact-info{
@@ -135,9 +142,13 @@ h1{
 
 .contact{
     margin-top: -2%;
-    padding-top: 5%;
+    padding-top: 1%;
     background-color: white;
     padding-bottom: 2%;
+}
+
+.contact h2{
+    color: rgba(0, 77, 139, 0.86);;
 }
 
 #contact{
@@ -449,6 +460,14 @@ h5 {
     visibility: visible;
 }
 
+.show{
+    animation-name: show;
+    -webkit-animation-name: show;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -467,6 +486,25 @@ h5 {
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes show {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 

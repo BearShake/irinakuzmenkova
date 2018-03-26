@@ -39,8 +39,22 @@
                         <li><a href="#pricing">PRICING</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
-
                 </div>
+                <li class="dropdown language-selector">
+                    Language:
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                        <img src="assets/images/flag-uk.png" />
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/flag-de.png" />
+                                <span>Krieviski</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
             </div>
         </nav>
 
@@ -52,7 +66,7 @@
                         </div>
                         <div class="col-sm-6">
                             <h2 class="handled"><strong>Irina</strong> Kuzmenkova</h2>
-                            <p>Ведение уголовных дел (защита на стадии дознания, следствия, судебная защита)</p>
+                            <p class="handled">Ведение уголовных дел (защита на стадии дознания, следствия, судебная защита)</p>
                         </div>
                     </div>
 
@@ -67,14 +81,11 @@
                             <div class="col-sm-6"></div>
                             <div class="col-sm-6">
                                 <div class="row">
-                                    <div class="col-sm6"></div>
-                                    <div class="col-sm6">
+                                    <div class="col-sm-6">
                                         <h2>Darba</h2>
                                         <p>Sfēras</p>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -139,7 +150,7 @@
         <!-- Services -->
 
         <div class="container text-center contact" id="services">
-            <h2>Es gārāntēju</h2>
+            <h2>Es garāntēju</h2>
             <div class="row adv-row">
                 <div class="col-sm-4">
                     <span class="glyphicon glyphicon-certificate logo-small award"></span>
@@ -283,7 +294,7 @@
 
             $(document).ready(function(){
                 $(".handled").each(function () {
-                    $(this).addClass("slide");
+                    $(this).addClass("show");
                 });
                 // Add smooth scrolling to all links in navbar + footer link
                 $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -308,7 +319,7 @@
                 });
 
                 $(window).scroll(function() {
-                    $('.slideanim, .handled').each(function(){
+                    $(".slideanim").each(function(){
                         var pos = $(this).offset().top;
 
                         var winTop = $(window).scrollTop();
@@ -318,6 +329,8 @@
                     });
                 });
             })
+
+
 
 
         </script>
