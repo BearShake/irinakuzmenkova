@@ -1,13 +1,13 @@
-$colwhite: #ffffff;
-$colblack: #000000;
-$spacing: 7px;
-$font1: "Barlow Condensed", sans-serid;
-$background: #9f2720;
-$btncolor: #323232;
-$btnfontcol: #fff;
-$bord: 0;
-$def-font: 14px;
-$noborder :0px;
+$colwhite:#ffffff;
+$colblack:#000000;
+$spacing:7px;
+$font1:"Barlow Condensed", sans-serid;
+$background:#9f2720;
+$btncolor:#323232;
+$btnfontcol:#fff;
+$bord:0;
+$def-font:14px;
+$noborder:0px;
 
 
 @mixin col-options($px){
@@ -30,7 +30,8 @@ $noborder :0px;
 
 .msg-title-header, .title, .description, .resultTitle, .result, .code {
   .btn {
-    @extend .msg-title-header .btn;
+    @extend .msg-title-header, .title, .description, .resultTitle, .result, .code;
+
   }
 }
 
@@ -41,8 +42,19 @@ $noborder :0px;
     border-radius: $noborder;
 
 
+    .navbar-nav > li > a:hover{
+      color: $colwhite;
+      background-color: $background;
+    }
+
+    .navbar-nav > li > a:focus {
+      color: $colwhite;
+      background-color: $background;
+    }
+
     .navbar-nav{
-      @extend .navbar-nav > li > a:focus;
+      color: $colwhite;
+      background-color: $background;
     }
 
     .navbar-nav > li > a{
@@ -50,25 +62,20 @@ $noborder :0px;
       font-family: $font1;
     }
 
-    .navbar-nav > li > a:hover{
+
+    .navbar-nav > .active > a{
       color: $colwhite;
       background-color: $background;
     }
 
-    .navbar-nav > li > a:focus {
-      @extend .navbar-nav > li > a:hover;
-    }
-
-    .navbar-nav > .active > a{
-      @extend .navbar-nav > li > a:hover;
-    }
-
     .navbar-nav > .active > a:hover{
-      @extend .navbar-nav > li > a:hover;
+      color: $colwhite;
+      background-color: $background;
     }
 
     .navbar-nav > .active > a:focus {
-      @extend .navbar-nav > li > a:hover;
+      color: $colwhite;
+      background-color: $background;
     }
 
     .navbar-toggle{
@@ -80,11 +87,11 @@ $noborder :0px;
     }
 
     .navbar-toggle:hover{
-      @extend .navbar-inverse .navbar-toggle;
+      background-color: $colwhite;
     }
 
     .navbar-toggle:focus{
-      @extend .navbar-inverse .navbar-toggle;
+      background-color: $colwhite;
     }
   }
 
@@ -106,7 +113,8 @@ $noborder :0px;
   }
 
   .description{
-    @extend .navbar-inverse .navbar-nav > li > a:hover;
+    color: $colwhite;
+    background-color: $background;
   }
 
   .resultTitle{
