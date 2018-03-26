@@ -12,16 +12,19 @@ h1{
 }
 
 .c-info{
-
+    margin-right: 4%;
+    margin-bottom: 4%;
+    margin-top: 4%;
     height: 100%;
 
 }
 
 .right-col{
     background-color: rgba(24, 97, 139, 0.46);
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 8%;
     padding-left: 2%;
+    margin-right: 0%;
     border-radius: 12px;
 }
 .c-info h1{
@@ -60,6 +63,10 @@ h1{
 }
 .container-fluid.about .row{
     padding: 4%;
+}
+
+.row.slideanim{
+    padding-bottom: 4%!important;
 }
 
 .bg-grey{
@@ -156,7 +163,6 @@ h1{
 }
 
 .contact2{
-
     margin-top: -2%;
     background-image: url("../img/pejz.jpg");
     background-attachment: fixed;
@@ -218,8 +224,8 @@ h1{
 .bg_yel{
     background-color: white;
     margin-right: 0%!important;
-    padding-top: 5%;
-    padding-bottom: 8%!important;
+    padding-top: 8%;
+    padding-bottom: 6%!important;
 }
 
 
@@ -320,6 +326,12 @@ p{
     color: #283870;
 }
 
+.row.slideanim p{
+    padding-left: 10%;
+}
+
+
+
 .container-fluid{
     padding: 0%!important;
 
@@ -327,6 +339,7 @@ p{
 
 .glyphicon.glyphicon-tag{
     font-size: 18px;
+    color: #19b9ff;
 }
 
 .centered .row{
@@ -374,11 +387,19 @@ h2 {
     font-weight: 600;
     margin-bottom: 30px;
 }
+
+.controlled > h3{
+    color: white;
+    font-size: 35px;
+    padding-bottom: 2%;
+    border-bottom: 3px solid #89b8ce;
+}
+
 h3{
     font-size: 24px;
     color: #3c3c3c;
     margin-left: 3%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 h4{
@@ -386,6 +407,15 @@ h4{
     font-size: 24px;
     color: #3c3c3c;
 
+}
+
+.itemList{
+    padding-bottom: 2%;
+}
+
+.itemList h5{
+    padding: 0%!important;
+    margin: 0%!important;
 }
 
 h5 {
@@ -417,14 +447,9 @@ h5 {
     background-size: cover;
 }
 
-.myl ,.myr{
-    color: rgba(255, 241, 229, 0.74) !important;
-
-}
-
 .ats{
     padding-top: 5%;
-    color: #111111;
+    color: #f8f9ff;
     letter-spacing: 2px;
 }
 
@@ -526,3 +551,64 @@ h5 {
 
 }
 
+
+
+.languagepicker {
+    background-color:transparent;
+    display: inline-block;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    transition: all .3s ease;
+    margin: 5px 50px 10px 10px;
+    vertical-align: top;
+    float: right;
+    border-color: #cccccc;
+    border-radius: 5px;
+}
+
+.languagepicker:hover {
+    /* don't forget the 1px border */
+    background-color: transparent;
+    height: 81px;
+}
+
+.languagepicker a{
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.languagepicker li {
+    display: block;
+    padding: 0px 20px;
+    line-height: 40px;
+    border-top: 1px solid #EEE;
+    background-color: transparent;
+}
+
+.languagepicker li:hover{
+    background-color: beige;
+}
+
+.languagepicker a:first-child li {
+    border: none;
+    background: transparent !important;
+}
+
+.languagepicker li img {
+    margin-right: 5px;
+}
+
+.roundborders {
+    border-radius: 5px;
+}
+
+.large:hover {
+    /*
+    don't forget the 1px border!
+    The first language is 40px heigh,
+    the others are 41px
+    */
+    height: 245px;
+}

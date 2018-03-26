@@ -18,7 +18,6 @@
     </head>
 
     <body>
-
         <nav class="navbar navbar-default navbar-fixed-top">
 
             <div class="container">
@@ -32,6 +31,11 @@
                     <a class="navbar-brand" href="#myPage">Home</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNav">
+
+                    <ul class="languagepicker roundborders">
+                        <a href="#nl"><li><img src="img/rus-icon.png" width="30" height="20"/>Krieviski</li></a>
+                        <a href="#en"><li><img src="img/latvija.png" width="30" height="20"/>Latviski</li></a>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#services">SERVICES</a></li>
@@ -40,24 +44,8 @@
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
-                <li class="dropdown language-selector">
-                    Language:
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-                        <img src="assets/images/flag-uk.png" />
-                    </a>
-                    <ul class="dropdown-menu pull-right">
-                        <li>
-                            <a href="#">
-                                <img src="assets/images/flag-de.png" />
-                                <span>Krieviski</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
             </div>
         </nav>
-
 
         <div class="container-fluid main-info">
                 <div class="col-sm-6 aac">
@@ -69,7 +57,6 @@
                             <p class="handled">Ведение уголовных дел (защита на стадии дознания, следствия, судебная защита)</p>
                         </div>
                     </div>
-
                 </div>
         </div>
 
@@ -93,36 +80,76 @@
                     <div class="col-sm-8 bg_yel">
                         <div class="row slideanim">
                             <div class="col-sm-6">
-                                <div class="glyphicon glyphicon-tag"></div>
-                                <h5>Hello</h5>
+                                <div class="row itemList">
+                                    <div class="col-sm-2 text-right">
+                                        <div class="glyphicon glyphicon-tag"></div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h5><strong>Hello</strong></h5>
+                                    </div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                             <div class="col-sm-6">
-                                <h5>Hello</h5>
+                                <div class="row itemList">
+                                    <div class="col-sm-2 text-right">
+                                        <div class="glyphicon glyphicon-tag"></div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h5>Hello</h5>
+                                    </div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                         </div>
                         <div class="row slideanim">
                             <div class="col-sm-6">
-                                <h5>Hello</h5>
+                                <div class="row itemList">
+                                    <div class="col-sm-2 text-right">
+                                        <div class="glyphicon glyphicon-tag"></div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h5>Hello</h5>
+                                    </div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                             <div class="col-sm-6">
-                                <h5>Hello</h5>
+                                <div class="row itemList">
+                                    <div class="col-sm-2 text-right">
+                                        <div class="glyphicon glyphicon-tag"></div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h5>Hello</h5>
+                                    </div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                         </div>
                         <div class="row slideanim">
                             <div class="col-sm-6">
-                                <h5>Hello</h5>
+                                <div class="row itemList">
+                                    <div class="col-sm-2 text-right">
+                                        <div class="glyphicon glyphicon-tag"></div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h5>Hello</h5>
+                                    </div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                             <div class="col-sm-6">
-                                <h5>Hello</h5>
+                                <div class="row itemList">
+                                    <div class="col-sm-2 text-right">
+                                        <div class="glyphicon glyphicon-tag"></div>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h5>Hello</h5>
+                                    </div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -241,12 +268,15 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="row controlled">
-                                <h3>Mūsu adrese</h3>
-                                <h5>ул. Арбат, 1а, Москва, 119019, Россия</h5>
-                                <h5>Email: info@mysite.ru</h5>
-                                <h5>Телефон:  +7 (495) 000-00-00</h5>
+                                <h3 class="text-center">Mūsu adrese</h3>
+                                <div class="col-sm-12">
+                                    <ul>
+                                        <li><h5>ул. Арбат, 1а, Москва, 119019, Россия</h5></li>
+                                        <li><h5>Email: info@mysite.ru</h5></li>
+                                        <li><h5>Телефон:  +7 (495) 000-00-00</h5></li>
+                                    </ul>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="row">
