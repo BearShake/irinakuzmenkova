@@ -178,7 +178,7 @@
 
 </div>
 
-<div class="container-fluid blue">
+<div class="container-fluid blue" id="about">
 	<div class="row info">
 		<div class="col-sm-12">
 			<h1 class="text-center">Par mūms</h1>
@@ -374,18 +374,12 @@
             if (this.hash !== "") {
                 // Prevent default anchor click behavior
                 event.preventDefault();
-
                 // Store hash
                 var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
+                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
                 }, 900, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
+                     window.location.hash = hash;
                 });
             } // End if
         });
@@ -401,14 +395,10 @@
             });
         });
     })
-
-
-
-
 </script>
 
-<script>
 
+<script>
     function langControl() {
         var lang = getCookie('lang');
         if(lang == ''){
@@ -443,8 +433,8 @@
         }
         return "";
     }
-
 </script>
+
 
 </body>
 </html>
