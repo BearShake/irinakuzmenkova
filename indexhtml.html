@@ -33,8 +33,19 @@
                 <div class="collapse navbar-collapse" id="myNav">
 
                     <ul class="languagepicker roundborders">
-                        <a href="#nl"><li><img src="img/rus-icon.png" width="30" height="20"/>Krieviski</li></a>
-                        <a href="#en"><li><img src="img/latvija.png" width="30" height="20"/>Latviski</li></a>
+                        <li class="activeLang>
+                            <a href="#ru onclick="langControl()">
+                                <img src="img/rus-icon.png" width="30" height="20"/>
+                                Krieviski
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#en" onclick="langControl()">
+                                <img src="img/latvija.png" width="30" height="20"/>
+                                Latviski
+                            </a>
+                        </li>
+
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#about">ABOUT</a></li>
@@ -364,5 +375,48 @@
 
 
         </script>
+
+        <script>
+
+            function langControl() {
+                var lang = getCookie('lang');
+                if(lang == ''){
+                    alert("Cookie is empty, setting ru lang");
+                    document.cookie = "lang=ru";
+                }else{
+                    switch (lang){
+                        case 'lv':
+                            document.cookie = "lang=ru";
+                            alert("changed to ru from lv");
+                            break;
+                        case 'ru':
+                            document.cookie = "lang=lv";
+                            alert("changed to ru from lv");
+                            location.reload();
+                            break;
+                    }
+                }
+
+
+            }
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+        </script>
+
     </body>
 </html>

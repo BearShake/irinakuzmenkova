@@ -447,6 +447,10 @@ h5 {
     background-size: cover;
 }
 
+.activeLang{
+
+}
+
 .ats{
     padding-top: 5%;
     color: #f8f9ff;
@@ -583,12 +587,12 @@ h5 {
     display: block;
     padding: 0px 20px;
     line-height: 40px;
-    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
     background-color: transparent;
 }
 
 .languagepicker li:hover{
-    background-color: beige;
+    background-color: rgba(245, 245, 220, 0.25);
 }
 
 .languagepicker a:first-child li {
