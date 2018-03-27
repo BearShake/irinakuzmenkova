@@ -33,10 +33,10 @@
 		<div class="collapse navbar-collapse" id="myNav">
 
 			<ul class="languagepicker roundborders">
-				<li class="activeLang>
-                            <a href="#ru onclick="langControl()">
-					<img src="img/rus-icon.png" width="30" height="20"/>
-					Krieviski
+				<li>
+					<a href="#ru" onclick="langControl()">
+						<img src="img/rus-icon.png" width="30" height="20"/>
+						Krieviski
 					</a>
 				</li>
 				<li>
@@ -61,9 +61,9 @@
 <div class="container-fluid main-info">
 	<div class="col-sm-6 aac">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-5">
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-7">
 				<?php
 				$coks = $_COOKIE['lang'];
 				switch ($coks)
@@ -181,7 +181,7 @@
 <div class="container-fluid blue">
 	<div class="row info">
 		<div class="col-sm-12">
-			<h1>Par mūms</h1>
+			<h1 class="text-center">Par mūms</h1>
 			<p>
 				Вы можете переместить его в любое место на странице. Расскажите посетителям сайта о себе. Здесь будет удачно смотреться текст о вашей компании и услугах.​
 			</p>
@@ -232,6 +232,27 @@
 			<span class="glyphicon glyphicon-certificate logo-small"></span>
 			<h4>Sertificets specialists</h4>
 			<p>Sertificeto palidzību</p>
+		</div>
+	</div>
+</div>
+
+<div class="container text-center contact" id="portfolio">
+	<h2 class="text-center">Portfolio</h2>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="portfolio-block">
+				<img src="img/portfolio-images/portf_1.jpg" alt="portf1" width="100%" height="100%">
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="portfolio-block">
+				<img src="img/portfolio-images/portf_2.jpg" alt="portf2" width="100%" height="100%">
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="portfolio-block">
+				<img src="img/portfolio-images/portf_3.jpg" alt="portf3" width="100%" height="100%">
+			</div>
 		</div>
 	</div>
 </div>
