@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/scsstest/my_scss.css">
 </head>
 
 <body>
@@ -295,6 +295,28 @@
 
 <!-- Contact -->
 <div class="container-fluid contact2" id="contact">
+
+    <div class="container text-center contact" id="portfolio">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="portfolio-block">
+                    <img src="img/portfolio-images/portf_1.jpg" alt="portf1" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="portfolio-block">
+                    <img src="img/portfolio-images/portf_2.jpg" alt="portf2" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="portfolio-block">
+                    <img src="img/portfolio-images/portf_3.jpg" alt="portf3" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<div class="row c-info">
 		<div class="col-sm-5">
 			<div class="row">
