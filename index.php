@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/scsstest/my_scss.css">
 </head>
 
+
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
 
@@ -51,7 +52,7 @@
 				<li><a href="#about">ABOUT</a></li>
 				<li><a href="#services">SERVICES</a></li>
 				<li><a href="#portfolio">PORTFOLIO</a></li>
-				<li><a href="#pricing">PRICING</a></li>
+				<li><a href="login.php">Login</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
 		</div>
@@ -65,17 +66,11 @@
 			</div>
 			<div class="col-sm-7">
 				<?php
-				$coks = $_COOKIE['lang'];
-				switch ($coks)
-				{
-					case 'ru':
-						echo "<h2 class=\"handled\"><strong>Ирина</strong> Кузменкова</h2>";
-						break;
-					case 'lv':
-						echo "<h2 class=\"handled\"><strong>Irīna</strong> Kuzmenkova</h2>";
-						break;
-				}
+				include 'languagecontroller.php';
+				$selector = new languagecontroller($_COOKIE['lang']);
+				$selector->printByTag('preview');
 				?>
+
 				<p class="handled">Ведение уголовных дел (защита на стадии дознания, следствия, судебная защита)</p>
 			</div>
 		</div>
